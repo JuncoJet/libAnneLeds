@@ -1,0 +1,13 @@
+LIBRARY	"libAnneLeds"
+EXPORTS
+	newAnne
+	freeAnne
+	show
+	onLed
+	onKey
+	clear
+	rgb
+	conv
+	openDev
+	closeDev
+	
