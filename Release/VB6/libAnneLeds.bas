@@ -6,7 +6,7 @@ Public Declare Sub clear Lib "libAnneLeds" (ByVal kbd As Long)
 Public Declare Sub freeAnne Lib "libAnneLeds" (ByVal kbd As Long)
 Public Declare Sub onKey Lib "libAnneLeds" (ByVal kbd As Long, ByVal k As String, ByVal rgb As Long)
 Public Declare Sub onLed Lib "libAnneLeds" (ByVal kbd As Long, ByVal k As Long, ByVal rgb As Long)
-Public Declare Sub show Lib "libAnneLeds" (ByVal kbd As Long)
+Public Declare Sub ledShow Lib "libAnneLeds" Alias "show" (ByVal kbd As Long)
 Public Declare Function openDev Lib "libAnneLeds" (ByVal kbd As Long, ByVal vid As Long, ByVal pid As Long) As Boolean
 Public Declare Sub closeDev Lib "libAnneLeds" (ByVal kbd As Long)
 

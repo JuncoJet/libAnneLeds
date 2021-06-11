@@ -29,7 +29,7 @@ Private Sub Command1_Click()
         onKey kbd, "a", &HFF0000
         onKey kbd, "b", &HFF0000
         onKey kbd, "c", &HFF0000
-        show kbd
+        ledShow kbd '存在命名冲突已更名
         closeDev kbd
     Else
         MsgBox "设备无法打开！"
