@@ -11,7 +11,7 @@
 <Folder name="Other Files">
 </Folder>
 	<File>libAnneLeds.h</File>
-<Attribute topline="1" x="26" y="16">main.c</Attribute>
+<Attribute topline="1" x="16" y="18">main.c</Attribute>
 <Attribute topline="1" x="1" y="12">libAnneLeds.h</Attribute>
 <FolderState>111</FolderState>
 <DefConfig>mingw5</DefConfig>

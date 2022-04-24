@@ -29,12 +29,10 @@ void TLEDS::show(){
         char buf[64]="\x7B\x10\x41\x60\x37\x00\x00\x7D\x20\x03\xFF\x02";
         buf[3]+=x;
         buf[sizeof(buf)-1]=0;
-        y=0;
-        for(int i=12;i<sizeof(buf);i+=3){
+        for(int y=0,i=12;i<sizeof(buf),y<17;i+=3,y++){
             buf[i]=leds[x][y]>>16&0xFF;
             buf[i+1]=leds[x][y]>>8&0xFF;
             buf[i+2]=leds[x][y]&0xFF;
-            y++;
         }
         bultWrite(3,buf,sizeof(buf),&r);
         bultRead(0x84,buf,sizeof(buf),&r);

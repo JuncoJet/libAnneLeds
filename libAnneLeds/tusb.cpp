@@ -38,5 +38,8 @@ int TUSB::bultWrite(int endp,char *data,int size,int *r){
 }
 
 void TUSB::closeDev(){
-    if(hDev)libusb_close(hDev);
+	if(hDev){
+		libusb_close(hDev);
+		hDev=0;
+	}
 }
